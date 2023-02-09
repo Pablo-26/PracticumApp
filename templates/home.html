@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Buscar</title>
+        <style>
+            body{
+                background-image: url("https://static.vecteezy.com/system/resources/previews/002/217/896/non_2x/cinema-wallpaper-social-media-message-background-vector.jpg");
+                background-size: cover;
+            }
+            #conte {
+                padding: 35px;
+                margin-right: 500px;
+                margin-bottom: 10px;
+                margin-left: 400px;
+                border-radius:10px;
+            }
+            #search {
+                width: 500px;
+                height: 50px;
+                font-family: Courier;
+                font-size: 30px;
+                margin: auto;
+                display:block;
+                border-radius:10px;
+            }
+            #boton {
+                width: 300px;
+                height: 40px;
+                font-family: Courier;
+                font-size: 30px;
+                margin: auto;
+                display:block;
+                border-radius:15px;
+                background-color: darkslategrey;
+
+         }
+  </style>
+    </head>
+    <body>
+    <h1><center><img src="https://media.discordapp.net/attachments/993714162305859644/1073052043293495396/logo4-removebg-preview_1.png" width="250" height="250" style="margin-top: 100px"></center></h1>
+      <form action="{% url 'search_word' %}" method="get">
+      <div id="conte" >
+        <center><input type="text" id="search" name="word" placeholder="Busca una pelicula "></center>
+    </div>
+          <center><input id = "boton" type="submit" value="Buscar"></center>
+    </form>
+
+    </body>
+    </html>
+
